@@ -17,11 +17,13 @@ class Model(object):
     def build(self, model_data):
 
         try:
+
             # Get data
             self.data = model_data
 
             # Create model
-            model = Model("FRCMPSP")
+            model = Model()
+            model.name = "FRCMPSP"
 
             # Create decision variables
             objective_value = model.addVar(name="objective_value")
